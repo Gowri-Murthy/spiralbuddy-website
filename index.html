@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spiral Buddy — A quiet companion for when thoughts spiral</title>
+  <meta name="description" content="A calm voice companion for when your thoughts won't slow down. Just talk. It listens.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(145deg, #0f1420 0%, #1a1f2e 50%, #151a25 100%);
+      color: #e8e8e8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      text-align: center;
+    }
+    
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 24px;
+      border-radius: 28px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+    
+    .tagline {
+      font-size: 1.2rem;
+      color: #a0a8b8;
+      margin-bottom: 40px;
+    }
+    
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #c8ccd4;
+      margin-bottom: 40px;
+    }
+    
+    .features {
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    
+    .feature-icon {
+      font-size: 1.2rem;
+      margin-right: 12px;
+      margin-top: 2px;
+    }
+    
+    .feature-text {
+      font-size: 1rem;
+      color: #b0b8c8;
+      line-height: 1.5;
+    }
+    
+    .store-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    
+    .store-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 24px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    
+    .store-button:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    
+    .store-button.coming-soon {
+      opacity: 0.6;
+      cursor: default;
+    }
+    
+    .characters {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    
+    .character {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 24px;
+      width: 200px;
+    }
+    
+    .character img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 12px;
+    }
+    
+    .character-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    
+    .character-tagline {
+      font-size: 0.9rem;
+      color: #a0a8b8;
+      font-style: italic;
+    }
+    
+    footer {
+      margin-top: auto;
+      padding-top: 40px;
+      color: #606878;
+      font-size: 0.9rem;
+    }
+    
+    footer a {
+      color: #808898;
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      color: #a0a8b8;
+    }
+    
+    .divider {
+      margin: 0 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="icon.png" alt="Spiral Buddy" class="logo" onerror="this.style.display='none'">
+    
+    <h1>Spiral Buddy</h1>
+    <p class="tagline">A quiet companion for when thoughts spiral</p>
+    
+    <p class="description">
+      Some days, your thoughts just want to spill. Spiral Buddy is a calm, comforting place to talk out loud — without being recorded, judged, or interrupted.
+    </p>
+    
+    <div class="features">
+      <div class="feature">
+        <span class="feature-icon">🎤</span>
+        <span class="feature-text">Just talk. Ramble, pause, repeat yourself. No pressure.</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🔒</span>
+        <span class="feature-text">Nothing is saved. No transcripts, no history, no tracking.</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">💬</span>
+        <span class="feature-text">Gentle responses when you pause. "I'm listening." "Go on."</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🌙</span>
+        <span class="feature-text">Perfect for late-night overthinking or post-work unloading.</span>
+      </div>
+    </div>
+    
+    <div class="store-buttons">
+      <a href="#" class="store-button coming-soon">
+        📱 App Store — Coming Soon
+      </a>
+      <a href="#" class="store-button coming-soon">
+        🤖 Play Store — Coming Soon
+      </a>
+    </div>
+    
+    <p style="color: #808898; font-size: 0.95rem; margin-bottom: 40px;">
+      This isn't therapy. It's more like a voice memo that feels a little less lonely.
+    </p>
+  </div>
+  
+  <footer>
+    <a href="/privacy">Privacy Policy</a>
+    <span class="divider">•</span>
+    <a href="mailto:spiralbuddyapp@gmail.com">Contact</a>
+    <br><br>
+    © 2026 Spiral Buddy
+  </footer>
+</body>
+</html>
