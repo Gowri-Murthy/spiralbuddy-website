@@ -3,32 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spiral Buddy - A quiet companion while you work</title>
-  <meta name="description" content="A gentle desktop pet that checks in on you. Body doubling without the camera.">
+  <title>Spiral Buddy — A gentle place to off-load your thoughts</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="Type or talk. Nothing is saved. Nothing is analyzed. Just somewhere for your thoughts to go.">
+  <meta name="keywords" content="thought dump, journaling alternative, rubber ducking, stress release, offloading thoughts, gentle companion">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Spiral Buddy — A gentle place to off-load your thoughts">
+  <meta property="og:description" content="Type or talk. Nothing is saved. Nothing is analyzed. Just somewhere for your thoughts to go.">
+  <meta property="og:image" content="https://spiralbuddy.app/cover.png">
+  <meta property="og:url" content="https://spiralbuddy.app">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spiral Buddy — A gentle place to off-load your thoughts">
+  <meta name="twitter:description" content="Type or talk. Nothing is saved. Nothing is analyzed.">
+  <meta name="twitter:image" content="https://spiralbuddy.app/cover.png">
+  
+  <link rel="canonical" href="https://spiralbuddy.app">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- SEO Meta Tags -->
-<meta name="description" content="A gentle desktop companion that checks in on you. Body doubling without the camera for ADHD, remote workers, and anyone who works better with quiet company.">
-<meta name="keywords" content="desktop pet, body doubling, ADHD app, work from home companion, anxiety companion, cozy desktop pet, virtual companion">
-<meta name="author" content="Spiral Buddy">
-
-<!-- Open Graph (for social sharing) -->
-<meta property="og:title" content="Spiral Buddy - A quiet companion while you work">
-<meta property="og:description" content="Body doubling without the camera. A gentle desktop pet that checks in on you.">
-<meta property="og:image" content="https://spiralbuddy.app/cover.png">
-<meta property="og:url" content="https://spiralbuddy.app">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Spiral Buddy - A quiet companion while you work">
-<meta name="twitter:description" content="Body doubling without the camera. A gentle desktop pet that checks in on you.">
-<meta name="twitter:image" content="https://spiralbuddy.app/cover.png">
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="/favicon.png">
-<link rel="canonical" href="https://spiralbuddy.app">
+  
   <style>
     * {
       margin: 0;
@@ -41,32 +39,39 @@
       background: linear-gradient(180deg, #faf8ff 0%, #f0e8ff 50%, #e8f0ff 100%);
       min-height: 100vh;
       color: #3d3a4a;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 700px;
       margin: 0 auto;
-      padding: 40px 24px;
+      padding: 60px 24px;
     }
 
     /* Hero */
     .hero {
       text-align: center;
-      padding: 40px 0 60px;
+      margin-bottom: 60px;
     }
 
     .hero-image {
       max-width: 100%;
-      width: 600px;
-      border-radius: 20px;
-      margin-bottom: 32px;
+      width: 500px;
+      margin-bottom: 40px;
     }
 
-    .tagline {
-      font-size: 1.3rem;
+    h1 {
+      font-size: 2rem;
+      color: #4a4560;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .subheadline {
+      font-size: 1.15rem;
       color: #6b6580;
-      margin-bottom: 24px;
+      margin-bottom: 32px;
+      line-height: 1.8;
     }
 
     .cta-button {
@@ -74,9 +79,9 @@
       background: linear-gradient(135deg, #8b7aa0 0%, #6b5b8a 100%);
       color: white;
       text-decoration: none;
-      padding: 16px 48px;
+      padding: 16px 40px;
       border-radius: 50px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 600;
       transition: transform 0.2s, box-shadow 0.2s;
       box-shadow: 0 4px 20px rgba(107, 91, 138, 0.3);
@@ -88,107 +93,118 @@
     }
 
     .price {
-      margin-top: 16px;
-      font-size: 1rem;
+      margin-top: 14px;
+      font-size: 0.95rem;
       color: #8b7aa0;
     }
 
-    .price span {
-      text-decoration: line-through;
-      opacity: 0.6;
-      margin-right: 8px;
+    /* Sections */
+    section {
+      margin-bottom: 60px;
     }
 
-    /* Features */
-    .features {
-      padding: 60px 0;
-    }
-
-    .features h2 {
+    .poetic {
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 1.1rem;
       color: #5a5270;
-      margin-bottom: 40px;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 40px 32px;
+      border-radius: 20px;
+      line-height: 2;
     }
 
-    .feature-grid {
+    .poetic p {
+      margin-bottom: 16px;
+    }
+
+    .poetic p:last-child {
+      margin-bottom: 0;
+      margin-top: 24px;
+      font-weight: 600;
+      color: #4a4560;
+    }
+
+    /* What it is / isn't */
+    .two-col {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: 1fr 1fr;
       gap: 24px;
     }
 
-    .feature-card {
-      background: rgba(255, 255, 255, 0.7);
+    @media (max-width: 600px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.6);
       border-radius: 16px;
       padding: 28px;
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(139, 122, 160, 0.1);
     }
 
-    .feature-card h3 {
-      font-size: 1.1rem;
-      color: #5a5270;
-      margin-bottom: 8px;
+    .card h3 {
+      font-size: 1rem;
+      color: #6b5b8a;
+      margin-bottom: 16px;
+      font-weight: 600;
     }
 
-    .feature-card p {
-      color: #6b6580;
+    .card ul {
+      list-style: none;
+    }
+
+    .card li {
+      padding: 6px 0;
+      color: #4a4560;
       font-size: 0.95rem;
     }
 
-    /* What you get */
-    .what-you-get {
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 20px;
-      padding: 40px;
-      margin: 40px 0;
-      text-align: center;
+    .card.is li::before {
+      content: "✦ ";
+      color: #8b7aa0;
     }
 
-    .what-you-get h2 {
-      font-size: 1.5rem;
+    .card.isnt li::before {
+      content: "✗ ";
+      color: #a08090;
+    }
+
+    /* Platforms */
+    .platforms {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 40px 32px;
+      border-radius: 20px;
+    }
+
+    .platforms h2 {
+      font-size: 1.2rem;
       color: #5a5270;
       margin-bottom: 24px;
     }
 
-    .what-you-get ul {
-      list-style: none;
+    .platform-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
       text-align: left;
-      max-width: 400px;
-      margin: 0 auto;
     }
 
-    .what-you-get li {
-      padding: 8px 0;
-      color: #4a4560;
-      position: relative;
-      padding-left: 28px;
+    @media (max-width: 500px) {
+      .platform-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
-    .what-you-get li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #8b7aa0;
-      font-weight: bold;
-    }
-
-    /* Coming soon */
-    .coming-soon {
-      text-align: center;
-      padding: 40px 0;
-      border-top: 1px solid rgba(139, 122, 160, 0.2);
-      margin-top: 40px;
-    }
-
-    .coming-soon h3 {
-      font-size: 1.2rem;
-      color: #6b6580;
+    .platform h4 {
+      font-size: 1rem;
+      color: #6b5b8a;
       margin-bottom: 8px;
     }
 
-    .coming-soon p {
-      color: #8b7aa0;
+    .platform p {
+      color: #5a5270;
       font-size: 0.95rem;
     }
 
@@ -196,23 +212,35 @@
       display: inline-block;
       background: rgba(139, 122, 160, 0.15);
       color: #6b5b8a;
-      padding: 6px 16px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-top: 12px;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      margin-top: 8px;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .final-cta p {
+      font-size: 1.1rem;
+      color: #5a5270;
+      margin-bottom: 24px;
+      line-height: 1.8;
     }
 
     /* FAQ */
     .faq {
-      padding: 40px 0;
+      margin-top: 40px;
     }
 
     .faq h2 {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: #5a5270;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
 
     .faq-item {
@@ -220,104 +248,100 @@
     }
 
     .faq-item h4 {
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #5a5270;
       margin-bottom: 4px;
     }
 
     .faq-item p {
       color: #6b6580;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     /* Footer */
     footer {
       text-align: center;
-      padding: 40px 0;
+      padding: 40px 0 20px;
       color: #8b7aa0;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     footer a {
       color: #6b5b8a;
     }
-
-    /* Mobile */
-    @media (max-width: 600px) {
-      .container {
-        padding: 24px 16px;
-      }
-
-      .hero {
-        padding: 20px 0 40px;
-      }
-
-      .cta-button {
-        padding: 14px 36px;
-        font-size: 1.1rem;
-      }
-
-      .what-you-get {
-        padding: 28px 20px;
-      }
-    }
   </style>
-
-
 </head>
 <body>
   <div class="container">
+    
     <!-- Hero -->
     <section class="hero">
-      <img src="cover.png" alt="Spiral Buddy - Lottie the otter, Bao the panda, and Sasha the cat" class="hero-image">
+      <img src="cover.png" alt="Spiral Buddy — Lottie, Bao, and Sasha" class="hero-image">
       
-      <p class="tagline">Body doubling without the camera. No Zoom calls. No Focusmate anxiety.<br>Just a gentle presence while you work.</p>
+      <h1>A gentle place to off-load your thoughts.</h1>
+      
+      <p class="subheadline">
+        Type or talk. Nothing is saved. Nothing is analyzed.<br>
+        Just somewhere for your thoughts to go.
+      </p>
       
       <a href="https://spiralbuddy.gumroad.com/l/spiralbuddy" class="cta-button">Get Spiral Buddy</a>
-      <p class="price">$5.99 — One-time purchase</p>
+      <p class="price">$5.99 — One-time purchase · No accounts · No data</p>
     </section>
 
-    <!-- Features -->
-    <section class="features">
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h3>🫧 Just... there</h3>
-          <p>Sits in the corner of your screen, breathing softly. A quiet presence while you work.</p>
+    <!-- Poetic section -->
+    <section class="poetic">
+      <p>Sometimes you don't want advice.</p>
+      <p>Sometimes you don't want to worry anyone.</p>
+      <p>You just need to get it out.</p>
+      <p>Spiral Buddy exists for that moment.</p>
+    </section>
+
+    <!-- What it is / isn't -->
+    <section class="two-col">
+      <div class="card is">
+        <h3>What it is</h3>
+        <ul>
+          <li>A quiet companion</li>
+          <li>A rubber duck that doesn't talk back</li>
+          <li>A place for spirals to soften</li>
+          <li>A way to check in with yourself</li>
+          <li>A release, not a record</li>
+        </ul>
+      </div>
+      <div class="card isnt">
+        <h3>What it isn't</h3>
+        <ul>
+          <li>Therapy</li>
+          <li>Journaling you have to reread</li>
+          <li>Body doubling</li>
+          <li>Productivity tracking</li>
+          <li>AI that gives advice</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Platforms -->
+    <section class="platforms">
+      <h2>Different moments, same promise</h2>
+      <div class="platform-grid">
+        <div class="platform">
+          <h4>💻 Desktop</h4>
+          <p>Type when you can't speak.</p>
+          <p>Gentle check-ins. A space for your spirals.</p>
         </div>
-        <div class="feature-card">
-          <h3>💧 Gentle check-ins</h3>
-          <p>"Have you had water?" "When did you last eat?" Customizable or turn them off entirely.</p>
-        </div>
-        <div class="feature-card">
-          <h3>🌀 Spiral mode</h3>
-          <p>A void to type into when you're spiraling. Nothing saved, nothing processed, nothing remembered.</p>
-        </div>
-        <div class="feature-card">
-          <h3>😌 Bad Day Mode</h3>
-          <p>Auto-pauses check-ins when you're depleted. No guilt, no pressure.</p>
+        <div class="platform">
+          <h4>📱 Mobile</h4>
+          <p>Speak when typing feels like too much.</p>
+          <span class="badge">Coming soon</span>
         </div>
       </div>
     </section>
 
-    <!-- What you get -->
-    <section class="what-you-get">
-      <h2>What you get</h2>
-      <ul>
-        <li>Desktop app for Mac</li>
-        <li>3 companions: Lottie (otter), Bao (panda), Sasha (cat)</li>
-        <li>Gentle body check-ins</li>
-        <li>Text spiral mode</li>
-        <li>No tracking. No streaks. No productivity guilt.</li>
-      </ul>
-      <br>
-      <a href="https://spiralbuddy.gumroad.com/l/spiralbuddy" class="cta-button">Get it now — $5.99</a>
-    </section>
-
-    <!-- Coming soon -->
-    <section class="coming-soon">
-      <h3>📱 Mobile app coming soon</h3>
-      <p>Voice mode for when you need to talk it out.</p>
-      <span class="badge">Windows coming soon</span>
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <p>You don't have to carry everything.<br>Spiral Buddy can hold it for a moment.</p>
+      <a href="https://spiralbuddy.gumroad.com/l/spiralbuddy" class="cta-button">Get Spiral Buddy — $5.99</a>
     </section>
 
     <!-- FAQ -->
@@ -325,18 +349,18 @@
       <h2>FAQ</h2>
       
       <div class="faq-item">
+        <h4>Does it save anything?</h4>
+        <p>No. Nothing saved. Nothing sent. Nothing remembered.</p>
+      </div>
+      
+      <div class="faq-item">
         <h4>Mac says it can't verify the app?</h4>
         <p>Right-click the app → Open → Open again. Standard for apps outside the App Store.</p>
       </div>
       
       <div class="faq-item">
-        <h4>How do I hide it?</h4>
-        <p>Right-click → Settings, or use the menu bar icon.</p>
-      </div>
-      
-      <div class="faq-item">
-        <h4>Does it track anything?</h4>
-        <p>No. Nothing saved. Nothing sent. Nothing remembered.</p>
+        <h4>Windows version?</h4>
+        <p>Coming soon.</p>
       </div>
       
       <div class="faq-item">
@@ -347,10 +371,9 @@
 
     <!-- Footer -->
     <footer>
-     
+      <p>Made with care ✦ <a href="https://gist.github.com/Gowri-Murthy/3d583582d3b726d483ff2d1dc8a8af66">Privacy Policy</a></p>
     </footer>
 
-    
   </div>
 </body>
 </html>
