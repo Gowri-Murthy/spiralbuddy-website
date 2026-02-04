@@ -124,6 +124,27 @@
       color: #4a4560;
     }
 
+    /* Privacy highlight */
+    .privacy-highlight {
+      text-align: center;
+      background: rgba(139, 122, 160, 0.1);
+      border: 1px solid rgba(139, 122, 160, 0.2);
+      padding: 24px 32px;
+      border-radius: 16px;
+      margin-bottom: 60px;
+    }
+
+    .privacy-highlight p {
+      color: #6b5b8a;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .privacy-highlight span {
+      font-size: 1.2rem;
+      margin-right: 8px;
+    }
+
     /* What it is / isn't */
     .two-col {
       display: grid;
@@ -289,6 +310,11 @@
       <p class="price">$5.99 — One-time purchase · No accounts · No data</p>
     </section>
 
+    <!-- Privacy highlight -->
+    <section class="privacy-highlight">
+      <p><span>🔒</span> Your voice never leaves your phone. No recordings. No transcriptions. No cloud.</p>
+    </section>
+
     <!-- Poetic section -->
     <section class="poetic">
       <p>Sometimes you don't want advice.</p>
@@ -303,7 +329,7 @@
         <h3>What it is</h3>
         <ul>
           <li>A quiet companion</li>
-          <li>A rubber duck that doesn't talk back</li>
+          <li>A rubber duck that listens gently</li>
           <li>A place for spirals to soften</li>
           <li>A way to check in with yourself</li>
           <li>A release, not a record</li>
@@ -333,6 +359,8 @@
         <div class="platform">
           <h4>📱 Mobile</h4>
           <p>Speak when typing feels like too much.</p>
+          <p>Your buddy responds with gentle acknowledgments.</p>
+          <p style="font-size: 0.85rem; color: #8b7aa0; margin-top: 8px;">Voice stays on your phone — never sent anywhere.</p>
           <span class="badge">Coming soon</span>
         </div>
       </div>
@@ -354,6 +382,11 @@
       </div>
       
       <div class="faq-item">
+        <h4>Does my voice get sent anywhere?</h4>
+        <p>No. On mobile, your voice is processed entirely on your device. It never leaves your phone.</p>
+      </div>
+      
+      <div class="faq-item">
         <h4>Mac says it can't verify the app?</h4>
         <p>Right-click the app → Open → Open again. Standard for apps outside the App Store.</p>
       </div>
@@ -371,7 +404,7 @@
 
     <!-- Footer -->
     <footer>
-      <p>Made with care ✦ <a href="https://gist.github.com/Gowri-Murthy/3d583582d3b726d483ff2d1dc8a8af66">Privacy Policy</a></p>
+      <p>Made with care ✦ <a href="/privacy">Privacy Policy</a></p>
     </footer>
 
   </div>
