@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spiral Buddy — A gentle place to off-load your thoughts</title>
+  <title>Spiral Buddy — A quiet companion for when thoughts spiral</title>
   
   <!-- SEO -->
-  <meta name="description" content="Type or talk. Nothing is saved. Nothing is analyzed. Just somewhere for your thoughts to go.">
-  <meta name="keywords" content="thought dump, journaling alternative, rubber ducking, stress release, offloading thoughts, gentle companion">
+  <meta name="description" content="Nothing saved. Nothing shared. Just something gentle nearby. No accounts, no tracking, no analysis.">
+  <meta name="keywords" content="thought dump, focus companion, stress release, offloading thoughts, gentle companion, no tracking, private">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Spiral Buddy — A gentle place to off-load your thoughts">
-  <meta property="og:description" content="Type or talk. Nothing is saved. Nothing is analyzed. Just somewhere for your thoughts to go.">
+  <meta property="og:title" content="Spiral Buddy — A quiet companion for when thoughts spiral">
+  <meta property="og:description" content="Nothing saved. Nothing shared. Just something gentle nearby.">
   <meta property="og:image" content="https://spiralbuddy.app/cover.png">
   <meta property="og:url" content="https://spiralbuddy.app">
   <meta property="og:type" content="website">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Spiral Buddy — A gentle place to off-load your thoughts">
-  <meta name="twitter:description" content="Type or talk. Nothing is saved. Nothing is analyzed.">
+  <meta name="twitter:title" content="Spiral Buddy — A quiet companion for when thoughts spiral">
+  <meta name="twitter:description" content="Nothing saved. Nothing shared. Just something gentle nearby.">
   <meta name="twitter:image" content="https://spiralbuddy.app/cover.png">
   
   <link rel="canonical" href="https://spiralbuddy.app">
@@ -124,25 +124,47 @@
       color: #4a4560;
     }
 
-    /* Privacy highlight */
-    .privacy-highlight {
+    /* Trust section */
+    .trust {
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      padding: 40px 32px;
+    }
+
+    .trust h2 {
       text-align: center;
-      background: rgba(139, 122, 160, 0.1);
-      border: 1px solid rgba(139, 122, 160, 0.2);
-      padding: 24px 32px;
-      border-radius: 16px;
-      margin-bottom: 60px;
-    }
-
-    .privacy-highlight p {
-      color: #6b5b8a;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-
-    .privacy-highlight span {
       font-size: 1.2rem;
-      margin-right: 8px;
+      color: #5a5270;
+      margin-bottom: 28px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .trust-item {
+      padding: 8px 0;
+    }
+
+    .trust-item h4 {
+      font-size: 0.95rem;
+      color: #6b5b8a;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .trust-item p {
+      font-size: 0.9rem;
+      color: #6b6580;
+      line-height: 1.6;
     }
 
     /* What it is / isn't */
@@ -299,28 +321,46 @@
     <section class="hero">
       <img src="cover.png" alt="Spiral Buddy — Lottie, Bao, and Sasha" class="hero-image">
       
-      <h1>A gentle place to off-load your thoughts.</h1>
+      <h1>A quiet companion for when thoughts spiral.</h1>
       
       <p class="subheadline">
-        Type or talk. Nothing is saved. Nothing is analyzed.<br>
-        Just somewhere for your thoughts to go.
+        Nothing saved. Nothing shared. Nothing analyzed.<br>
+        Just something gentle nearby.
       </p>
       
       <a href="https://spiralbuddy.gumroad.com/l/spiralbuddy" class="cta-button">Get Spiral Buddy</a>
-      <p class="price">$5.99 — One-time purchase · No accounts · No data</p>
-    </section>
-
-    <!-- Privacy highlight -->
-    <section class="privacy-highlight">
-      <p><span>🔒</span> Your voice never leaves your phone. No recordings. No transcriptions. No cloud.</p>
+      <p class="price">$5.99 — One-time purchase · No accounts · No signups</p>
     </section>
 
     <!-- Poetic section -->
     <section class="poetic">
       <p>Sometimes you don't want advice.</p>
-      <p>Sometimes you don't want to worry anyone.</p>
-      <p>You just need to get it out.</p>
-      <p>Spiral Buddy exists for that moment.</p>
+      <p>Sometimes you just need to get it out.</p>
+      <p>Type it, say it, let it disappear.</p>
+      <p>Spiral Buddy is built for that moment.</p>
+    </section>
+
+    <!-- Trust section -->
+    <section class="trust">
+      <h2>Designed around trust, not engagement</h2>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <h4>Nothing is saved</h4>
+          <p>No history, no transcripts, no logs. Close it and it's gone.</p>
+        </div>
+        <div class="trust-item">
+          <h4>Nothing leaves your device</h4>
+          <p>Audio is never sent, stored, or processed. It's used in the moment and deleted.</p>
+        </div>
+        <div class="trust-item">
+          <h4>No accounts or signups</h4>
+          <p>Nothing tied to your identity. Open, use, close. That's it.</p>
+        </div>
+        <div class="trust-item">
+          <h4>Nothing is analyzed</h4>
+          <p>No AI studying your thoughts. No tracking. No learning from you.</p>
+        </div>
+      </div>
     </section>
 
     <!-- What it is / isn't -->
@@ -329,19 +369,19 @@
         <h3>What it is</h3>
         <ul>
           <li>A quiet companion</li>
-          <li>A rubber duck that listens gently</li>
           <li>A place for spirals to soften</li>
           <li>A way to check in with yourself</li>
           <li>A release, not a record</li>
+          <li>Something gentle to sit with you</li>
         </ul>
       </div>
       <div class="card isnt">
         <h3>What it isn't</h3>
         <ul>
-          <li>Therapy</li>
+          <li>Therapy or a therapist replacement</li>
           <li>Journaling you have to reread</li>
-          <li>Body doubling</li>
-          <li>Productivity tracking</li>
+          <li>Productivity software</li>
+          <li>Something trying to optimize you</li>
           <li>AI that gives advice</li>
         </ul>
       </div>
@@ -349,18 +389,16 @@
 
     <!-- Platforms -->
     <section class="platforms">
-      <h2>Different moments, same promise</h2>
+      <h2>Wherever you need it</h2>
       <div class="platform-grid">
         <div class="platform">
           <h4>💻 Desktop</h4>
-          <p>Type when you can't speak.</p>
-          <p>Gentle check-ins. A space for your spirals.</p>
+          <p>A small companion on your screen. Gentle check-ins. A text void for your spirals.</p>
         </div>
         <div class="platform">
           <h4>📱 Mobile</h4>
-          <p>Speak when typing feels like too much.</p>
-          <p>Your buddy responds with gentle acknowledgments.</p>
-          <p style="font-size: 0.85rem; color: #8b7aa0; margin-top: 8px;">Voice stays on your phone — never sent anywhere.</p>
+          <p>Talk when typing feels like too much. Focus mode with ad-free music — no subscription needed.</p>
+          <p style="font-size: 0.85rem; color: #8b7aa0; margin-top: 8px;">Works anywhere — even when you can't install apps on your work laptop.</p>
           <span class="badge">Coming soon</span>
         </div>
       </div>
@@ -368,7 +406,7 @@
 
     <!-- Final CTA -->
     <section class="final-cta">
-      <p>You don't have to carry everything.<br>Spiral Buddy can hold it for a moment.</p>
+      <p>No accounts. No ads. No tracking.<br>Just open and breathe.</p>
       <a href="https://spiralbuddy.gumroad.com/l/spiralbuddy" class="cta-button">Get Spiral Buddy — $5.99</a>
     </section>
 
@@ -378,27 +416,32 @@
       
       <div class="faq-item">
         <h4>Does it save anything?</h4>
-        <p>No. Nothing saved. Nothing sent. Nothing remembered.</p>
+        <p>No. Nothing saved, nothing sent, nothing remembered.</p>
       </div>
       
       <div class="faq-item">
         <h4>Does my voice get sent anywhere?</h4>
-        <p>No. On mobile, your voice is processed entirely on your device. It never leaves your phone.</p>
+        <p>No. Audio is processed entirely on your device, used in the moment, and deleted. It never leaves your phone.</p>
       </div>
       
       <div class="faq-item">
-        <h4>Mac says it can't verify the app?</h4>
-        <p>Right-click the app → Open → Open again. Standard for apps outside the App Store.</p>
+        <h4>Do I need an account?</h4>
+        <p>No. No signup, no login, no email. Nothing tied to your identity.</p>
       </div>
       
       <div class="faq-item">
-        <h4>Windows version?</h4>
-        <p>Coming soon.</p>
+        <h4>Can I use this at work?</h4>
+        <p>Yes. Nothing is stored or transmitted. Your thoughts stay on your device.</p>
       </div>
       
       <div class="faq-item">
         <h4>Is this a subscription?</h4>
         <p>No. One-time purchase. Yours forever.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Mac says it can't verify the app?</h4>
+        <p>Right-click the app → Open → Open again. Standard for apps outside the App Store.</p>
       </div>
     </section>
 
